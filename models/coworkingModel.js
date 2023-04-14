@@ -48,7 +48,9 @@ const Coworking = (sequelize, DataTypes) => {
             type: DataTypes.JSON,
         }
       }, {
-        // Other model options go here
+        tableName: 'coworking',
+        timestamps: true,
+        underscored: true
       })
 }
 

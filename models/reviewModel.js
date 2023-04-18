@@ -21,9 +21,9 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
-    }, {
+    },{
         tableName: 'review',
-        timestamps: false,
-        underscored: false
+        timestamps: true,
+        underscored: true
     })
 }

@@ -5,11 +5,11 @@ exports.findAllReviews = (req, res) => {
     ReviewModel.findAll({
         include: [UserModel, CoworkingModel]
     })
-        .then((el) => {
-            const msg = `La liste des revews a bien été retournée.`
-            res.json({ message: msg, data: el })
-        })
-        .catch(error => {console.error(`Erreur findAllReviews  ${error}`)})  
+    .then((el) => {
+        const msg = `La liste des revews a bien été retournée.`
+        res.json({ message: msg, data: el })
+    })
+    .catch(error => {console.error(`Erreur findAllReviews  ${error}`)})  
 }
 
 exports.createReview = (req, res) => {
